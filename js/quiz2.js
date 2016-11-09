@@ -22,26 +22,31 @@ $(document).ready(function(){
 
 $('#accordion1').click(function() {
   if(!$('#idk1').is(':visible')) {
-    $('#idk1').show();
+    $('#idk1').fadeIn('slow');
   }
   else {
-    $('#idk1').hide();
+    $('#idk1').fadeOut('slow');
   }
 });
 
 $('#accordion2').click(function() {
   if(!$('#idk2').is(':visible')) {
-    $('#idk2').show();
+    $('#idk2').fadeIn('slow');
   }
   else {
-    $('#idk2').hide();
+    $('#idk2').fadeOut('slow');
   }
 });
 
 $('#fade').click(function() {
-  $('body').html('<p>Goodbye!!!!!!!!!</p>');
+  $('h1').fadeOut(1000);
+  $('section').fadeOut(1000);
+  $('p').fadeOut(1000);
+  $('button').fadeOut(1000);
+  $('#fade').fadeOut(1000);
+  $('h2').fadeIn(1000);
 });
 
 $(document).ready(function(){
-  alert("Here is a happy function I suppose.");
+  alert("This makes me happy because I have no creativity when writing JS!!!!!!!!!!!!");
 });
